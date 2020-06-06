@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link
 } from "react-router-dom";
 
@@ -22,7 +19,7 @@ class Header extends Component {
     }
 
     render() {
-        const red = {
+        /* const red = {
             backgroundColor: 'black',
             color: 'white',
             transition: 'background 0.5s ease, color 0.2s ease'
@@ -32,7 +29,7 @@ class Header extends Component {
             backgroundColor: 'white',
             color: 'black',
             transition: 'background 0.5s ease, color 0.2s ease'
-        }
+        } */
 
         return (            
                 <div>

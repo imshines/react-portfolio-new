@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Components/Header'
 import Home from './Components/Home'
-import Blog from './Components/Blog'
+import Blog from './Components/Blog/Blog'
 import Footer from './Components/Footer'
 import {
   BrowserRouter as Router,
@@ -12,7 +12,9 @@ import {
 
 function App() {
   return (
-    <div className="container">
+    <div className="container"
+      // style={theme ? red : white}
+    >
       <Router>
         <Header />
         <Switch>

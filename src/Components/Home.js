@@ -44,11 +44,11 @@ function Home() {
                 <p>I build WebApps with high-fidelity user interface and well optimized apps which can run on both Desktop and Mobile with better performance.</p>
             </main>
             <section className="about" style={marginY}>
-                <div><img src={Photo} style={imageStyle} /></div>
+                <div><img src={Photo} style={imageStyle} aria-hidden alt="mohans photo"/></div>
                 <h2 style={marginBottom}>Mohan Kumar</h2>
                 <div style={marginBottom}>
                     <p>Bachelors in Computer Science Engineering Student. I'm intrested in tech and learning about new emerging technologies, I chose my path as a Web Developer in order to build Web Apps and Mobile Apps using JavaScript since it is my favorite language.</p>
-                    <p>I play Games and binge watch TV Series and Movies, I take photographs.</p>
+                    <p>I love to play Games and binge watch TV Series and Movies also take photographs as a hobby.</p>
                 </div>
                 <h3 style={marginBottom}>Some of my skills are,</h3>
                 <ul style={listStyle}>
