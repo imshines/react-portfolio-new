@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  margin: 0 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  color: #ffffff;
+  background-color: #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1,h2,h3,h4{
+    font-family: 'Raleway', sans-serif;
+}
+p, li, ul{
+    font-size: medium;
+    font-family: 'Domine', serif;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.home-container{
+  margin: auto;
+  width: 50vw;
+}
+
+.nav-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.nav-items {
+  display: flex;
+  list-style-type: none;
+  margin-right: 80px;
+}
+
+.nav-item{
+    margin: 0 20px;
+}
+
+.hero{
+  height: 50vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.about{
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.works{
+  margin: 80px 0;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style-position: none;
+}
+
+.connect{
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.facebook{
+  color: #0b559e;
+}
+
+.instagram{
+  color: #e3205a;
+}
+
+.linkedin{
+  color: #163075;
+}
+
+.github{
+  color: #4f5152;
+}
+
+.telegram{
+  color: #14aac4;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .home-container{
+    width: 90vw;
+  }
+  .works ul{
+    width: 50vw;
   }
 }

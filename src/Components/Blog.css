@@ -1,0 +1,23 @@
+.blog-container {
+  margin: auto;
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-post-heading{
+    padding-top: 20px;
+}
+
+.blog-post-content{
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .blog-container{
+      width: 80vw;
+    }
+  }
+  
