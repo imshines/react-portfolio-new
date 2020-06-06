@@ -50,7 +50,7 @@ function Home() {
                     <p>Bachelors in Computer Science Engineering Student. I'm intrested in tech and learning about new emerging technologies, I chose my path as a Web Developer in order to build Web Apps and Mobile Apps using JavaScript since it is my favorite language.</p>
                     <p>I play Games and binge watch TV Series and Movies, I take photographs.</p>
                 </div>
-                <h3 style={marginBottom}>Some of my skills are,</h3>
+                <h3 style={marginBottom}>Some of my skills,</h3>
                 <ul style={listStyle}>
                     <li>HTML, CSS, JavaScript</li>
                     <li>ReactJS</li>
