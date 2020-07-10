@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Header from './Components/Header'
 import Home from './Components/Home'
@@ -10,21 +10,35 @@ import {
   Route,
 } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="container"
-      // style={theme ? red : white}
-    >
-      <Router>
-        <Header />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/blog" component={Blog} />
-        </Switch>
-        <Footer />
-      </Router>
-    </div>
-  );
-}
+const container = 'container';
+const mode = 'dark-mode'
 
+class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      mode: null,
+    }
+  }
+
+  receiveDataFromChild = (mode) => {
+    this.setState({ mode });
+  }
+
+  render() {
+    return (
+      <div className={container, this.state.mode ? 'light-mode' : 'dark-mode'}>
+        <Router>
+          <Header sendDataToParent={this.receiveDataFromChild} />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/blog" component={Blog} />
+          </Switch>
+          <Footer />
+        </Router>
+      </div>
+    );
+  }
+}
 export default App;
