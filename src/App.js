@@ -6,7 +6,7 @@ import Blog from './Components/Blog/Blog'
 import BlogDetails from './Components/Blog/BlogDetails'
 import Footer from './Components/Footer'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";

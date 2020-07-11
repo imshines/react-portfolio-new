@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTelegram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTelegram } from 'react-icons/fa';
 
 const margin = {
     marginLeft: 15,
