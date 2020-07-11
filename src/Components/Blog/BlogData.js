@@ -2,7 +2,7 @@ import React from 'react';
 
 function BlogData(props) {
     return (
-        <div className="blog-container">
+        <div>
             <h2 className="blog-post-heading" >{props.name}</h2>
             <div style={chipStyle}>{props.tag}</div>
             <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: props.brief }}>
