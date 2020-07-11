@@ -3,7 +3,7 @@ import data from '../../blogData.json';
 import BlogConnect from './BlogConnect'
 
 function BlogDetails(props) {
-    const current = props.match.params.id - 1
+    const current = props.match.params.id
     return (
         <div className="blog-container">
             <h1 className="blog-post-heading" >{data[current].heading}</h1>

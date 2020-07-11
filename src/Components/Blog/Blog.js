@@ -7,11 +7,14 @@ import { Link } from 'react-router-dom';
 function Blog(props) {
 
     const blog = data.map(datas => {
-        return (
-            <Link to={`/blog/${datas.id}`} key={datas.id}>
-                <BlogData name={datas.heading} brief={datas.brief} tag={datas.tag} />
-            </Link>
-        )
+        if (datas.id >= 0) {
+            return (
+                <Link to={`/blog/${datas.id}`} key={datas.id}>
+                    {console.log(datas.id)}
+                    <BlogData name={datas.heading} brief={datas.brief} tag={datas.tag} />
+                </Link>
+            )
+        }
     })
 
     return (
