@@ -106,6 +106,14 @@ p, li, ul{
   color: white;
 }
 
+.dark-mode .active
+{
+  border-bottom: 2px solid white;
+}
+
+.light-mode .active{
+  border-bottom: 2px solid black;
+}
 
 @media only screen and (max-width: 600px) {
   .container {

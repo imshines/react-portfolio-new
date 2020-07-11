@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {
-    Link
+    NavLink
 } from "react-router-dom";
 import { FaSun, FaMoon } from 'react-icons/fa';
 
@@ -20,28 +20,28 @@ class Header extends Component {
     }
 
     sendDataToParent = () => {
+        this.setState({
+            theme: !this.state.theme
+        })
         this.props.sendDataToParent(this.state.theme);
     }
 
     render() {
         return (
-            <div /* className={this.state.theme ? 'dark-mode' : 'light-mode'} */>
+            <div>
                 <nav className="nav-container" style={{ fontFamily: "'Raleway', sans-serif'" }}>
                     <ul className="nav-items">
                         <li className="nav-item">
-                            <Link to="/">Home</Link>
+                            <NavLink exact to="/">Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link to="/blog">Blog</Link>
+                            <NavLink to="/blog">Blog</NavLink>
                         </li>
                         <li className="nav-item">
                             <a href="https://www.instagram.com/imshines" target="none">Gallery</a>
                         </li>
                     </ul>
-                    <label style={{ display: 'flex', alignItems: 'center' }}>
-                        {this.state.theme ? <FaMoon /> : <FaSun />}
-                        <input type="checkbox" checked={this.state.theme} className="theme-toggle" onChange={this.clickHandle} onClick={this.sendDataToParent} style={{ marginLeft: 10 }} />
-                    </label>
+                    <button onClick={this.sendDataToParent} style={{ padding: 5, borderRadius: 5, border: 'none', alignItems: 'center', justifyContent: 'center', display: 'flex' }} className="theme-toggle" >{this.state.theme ? <FaMoon /> : <FaSun />}</button>
                 </nav>
             </div>
         )

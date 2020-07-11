@@ -1,10 +1,20 @@
 .blog-container {
   margin: auto;
   width: 50vw;
+  min-height: 100vh;
+}
+
+.mt-20{
+  margin-top: 20px;
 }
 
 .blog-post-heading{
     padding-top: 20px;
+}
+
+.image-container{
+  height: 30%;
+  width: 100%;
 }
 
 .blog-post-content{

@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Header'
 import Home from './Components/Home'
 import Blog from './Components/Blog/Blog'
+import BlogDetails from './Components/Blog/BlogDetails'
 import Footer from './Components/Footer'
 import {
   BrowserRouter as Router,
@@ -11,7 +12,6 @@ import {
 } from "react-router-dom";
 
 const container = 'container';
-const mode = 'dark-mode'
 
 class App extends Component {
 
@@ -33,7 +33,8 @@ class App extends Component {
           <Header sendDataToParent={this.receiveDataFromChild} />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/blog" component={Blog} />
+            <Route path="/blog" exact component={Blog} />
+            <Route path="/blog/:id" component={BlogDetails} />
           </Switch>
           <Footer />
         </Router>
