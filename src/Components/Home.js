@@ -53,7 +53,9 @@ function Home() {
                 <ul style={listStyle}>
                     <li>HTML, CSS, JavaScript</li>
                     <li>ReactJS</li>
-                    <li>PHP, MySQL</li>
+                    <li>React Native</li>
+                    <li>Nodejs / Express</li>
+                    <li>Laravel</li>
                     <li>Figma, Adobe XD</li>
                     <li>Photoshop</li>
                 </ul>
