@@ -1,6 +1,6 @@
 import React from 'react'
 import Photo from '../assets/me.jpg'
-import { FaFacebook, FaInstagram, FaTelegram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaGithub, FaTwitter } from 'react-icons/fa';
 
 function Home() {
 
