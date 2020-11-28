@@ -69,11 +69,9 @@ function Home() {
             <section className="connect">
                 <h3 style={marginBottom}>Connect With Me</h3>
                 <div style={justifyLogo}>
-                    <a target="none" className="facebook" href="https://www.facebook.com/shinesemm"><FaFacebook style={margin} /></a>
-                    <a target="none" className="instagram" href="https://www.instagram.com/imshines"><FaInstagram style={margin} /></a>
-                    <a target="none" className="linkedin" href="https://www.linkedin.com/in/imohankumar/"><FaLinkedin style={margin} /></a>
+                    <a target="none" className="instagram" href="https://www.instagram.com/web.snips"><FaInstagram style={margin} /></a>
                     <a target="none" className="github" href="https://www.github.com/imshines"><FaGithub style={margin} /></a>
-                    <a target="none" className="telegram" href="https://t.me/imshines"><FaTelegram style={margin} /></a>
+                    <a target="none" className="facebook" href="https://www.twitter.com/shinestwee"><FaTwitter style={margin} /></a>
                 </div>
             </section>
         </div>
